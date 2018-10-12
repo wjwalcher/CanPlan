@@ -39,6 +39,9 @@ classes = {
 # List containing task objects
 tasks = list()
 
+# List containing times we're always busy
+always_busy = list()
+
 
 def get_priority(task_type, course=None):
     """
@@ -77,6 +80,29 @@ def get_next_seven_days(priority_threshold=None):
                     next_seven_days.append(task)
     return next_seven_days
 
+
+def determine_free_time():
+    """
+    Determines the times user has available to do tasks outside of
+    regularly scheduled events (i.e. weekly classes, meetings)
+    """
+    pass
+
+
+def add_always_busy_time():
+    """
+    Adds a time when we're always busy (due to a class/meeting)
+    to our always_busy list
+    """
+    pass
+
+
+def remove_always_busy_time():
+    """
+    Removes a time when we're always busy (due to a class/meeting)
+    to our always_busy list
+    """
+    pass
 
 
 
